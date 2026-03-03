@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+:root {
+  --background: #01051a;
+  --foreground: #ffffff;
+  --qsel-blue: 63, 140, 228;
+  --qsel-purple: 139, 92, 246;
+  --qsel-dark: 1, 5, 26;
+  --card-bg: rgba(1, 5, 26, 0.85);
+  --card-border: rgba(63, 140, 228, 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-qsel-blue: rgba(var(--qsel-blue), 1);
+  --color-qsel-purple: rgba(var(--qsel-purple), 1);
+  --color-qsel-dark: rgba(var(--qsel-dark), 1);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+}
+
+html {
+  background: #01051a;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* QSEL Utility Classes */
+.text-qsel-highlight {
+  color: rgba(63, 140, 228, 1);
+}
+
+.bg-qsel-main {
+  background-color: rgba(0, 0, 20, 1);
+}
+
+.border-qsel {
+  border-color: rgba(63, 140, 228, 0.3);
+}
+
+.border-qsel-bright {
+  border-color: rgba(63, 140, 228, 1);
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(0, 0, 20, 1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(63, 140, 228, 0.2);
+  border-radius: 16px;
+}
+
+.glass-card:hover {
+  border-color: rgba(63, 140, 228, 0.5);
+  box-shadow: 0 0 30px rgba(63, 140, 228, 0.1);
+}
+
+/* Gradient backgrounds */
+.gradient-hero {
+  background: linear-gradient(180deg, rgba(0, 0, 00, 1) 0%, rgba(0, 0, 20, .75) 50%, rgba(0, 0, 00, 1) 100%);
+}
+
+.gradient-subtle {
+  background: linear-gradient(135deg, rgba(63, 140, 228, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+}
+
+/* Button styles */
+.btn-primary {
+  background: rgba(0, 0, 20, 1);
+  color: white;
+  padding: 6px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(63, 140, 228, 0);
+  border-left: 1px solid rgba(63, 140, 228, .25);
+  border-right: 1px solid rgba(63, 140, 228, .25);
+  border-top: 1px solid rgba(63, 140, 228, 1);
+  border-bottom: 1px solid rgba(63, 140, 228, 1);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: rgba(63, 140, 228, 0.30);
+  border: 1px solid rgba(63, 140, 228, 1);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: rgba(63, 140, 228, 1);
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(63, 140, 228, 0.5);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(63, 140, 228, 0.1);
+  border-color: rgba(63, 140, 228, 1);
+}
+
+/* Product card glow on hover */
+.product-card {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px rgba(63, 140, 228, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(1, 5, 26, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(63, 140, 228, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(63, 140, 228, 0.5);
+}
+
+/* QF Logo visual effects */
+.qf-logo-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qf-logo-glow {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(63, 140, 228, 0.25) 0%, transparent 70%);
+  filter: blur(12px);
+  animation: qf-logo-pulse 3s ease-in-out infinite;
+}
+
+.qf-logo-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgba(63, 140, 228, 0.4);
+  animation: qf-logo-ring-pulse 2.5s ease-in-out infinite;
+}
+
+.qf-logo-img {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 20px rgba(63, 140, 228, 0.3));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.qf-logo-container:hover .qf-logo-img {
+  filter: drop-shadow(0 0 30px rgba(63, 140, 228, 0.5));
+  transform: scale(1.02);
+}
+
+.qf-logo-hero {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 1.5rem;
+}
+
+.qf-logo-hero .qf-logo-img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.qf-logo-nav {
+  width: 36px;
+  height: 36px;
+}
+
+.qf-logo-nav .qf-logo-glow {
+  inset: -4px;
+  filter: blur(8px);
+}
+
+.qf-logo-nav .qf-logo-ring {
+  inset: -2px;
+}
+
+.qf-logo-nav .qf-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+@keyframes qf-logo-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes qf-logo-ring-pulse {
+  0%, 100% { border-color: rgba(63, 140, 228, 0.3); }
+  50% { border-color: rgba(63, 140, 228, 0.6); }
+}
