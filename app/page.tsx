@@ -124,6 +124,15 @@ export default function Home() {
           <p className="text-xs text-slate-500 mt-4">
             Part of the QSEL Enterprise ecosystem. No passwords. Quantum-secured cNFT sessions.
           </p>
+
+          <a
+            href="https://qselenterprise.com/beta"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-6 px-4 py-2 rounded-full border border-emerald-500/30 text-emerald-400 text-sm hover:bg-emerald-500/10 transition-colors"
+          >
+            📲 QSEL Authenticator Android beta is live — join the test →
+          </a>
         </div>
       </section>
 
