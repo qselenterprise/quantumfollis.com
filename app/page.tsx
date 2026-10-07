@@ -39,13 +39,11 @@ export default function Home() {
   return (
     <main className="min-h-screen gradient-hero">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-qsel">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-qf border-b border-qsel">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="qf-logo-container qf-logo-nav">
-              <span className="qf-logo-glow" aria-hidden />
-              <span className="qf-logo-ring" aria-hidden />
-              <Image src="/qf-logo.png" alt="Quantum Follis" width={36} height={36} className="qf-logo-img" priority />
+              <Image src="/qf-logo.png" alt="Quantum Follis" width={44} height={44} className="qf-logo-img" priority />
             </div>
             <span className="text-2xl font-bold text-qsel-highlight">Quantum</span>
             <span className="text-xl font-light text-white">Follis</span>
@@ -84,9 +82,7 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl text-center">
           <div className="flex flex-col items-center mb-6">
             <div className="qf-logo-container qf-logo-hero">
-              <span className="qf-logo-glow" aria-hidden />
-              <span className="qf-logo-ring" aria-hidden />
-              <Image src="/qf-logo.png" alt="Quantum Follis" width={160} height={160} className="qf-logo-img" priority />
+              <Image src="/qf-logo.png" alt="Quantum Follis" width={220} height={220} className="qf-logo-img" priority />
             </div>
             <div className="px-4 py-1.5 rounded-full border border-qsel text-qsel-highlight text-xs font-medium tracking-wide">
               NEXT-GEN DIGITAL WALLET — SOLANA FIRST
@@ -264,8 +260,8 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <div className="qf-logo-container" style={{ width: 28, height: 28 }}>
-                  <Image src="/qf-logo.png" alt="" width={28} height={28} className="qf-logo-img" />
+                <div className="qf-logo-container" style={{ width: 40, height: 40 }}>
+                  <Image src="/qf-logo.png" alt="" width={40} height={40} className="qf-logo-img" />
                 </div>
                 <span className="text-lg font-bold text-qsel-highlight">Quantum</span>
                 <span className="text-sm text-white">Follis</span>
@@ -296,6 +292,8 @@ export default function Home() {
             <div>
               <p className="text-xs text-slate-400 font-semibold mb-3 uppercase tracking-wider">Legal</p>
               <div className="space-y-2">
+                <Link href="/help" className="block text-sm text-slate-500 hover:text-white transition-colors">Help Center</Link>
+                <Link href="/support" className="block text-sm text-slate-500 hover:text-white transition-colors">Contact Support</Link>
                 <Link href="/privacy" className="block text-sm text-slate-500 hover:text-white transition-colors">Privacy Policy</Link>
                 <Link href="/terms" className="block text-sm text-slate-500 hover:text-white transition-colors">Terms of Service</Link>
               </div>

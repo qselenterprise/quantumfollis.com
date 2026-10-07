@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #01051a;
+  --background: rgba(0, 0, 10, 1);
   --foreground: #ffffff;
   --qsel-blue: 63, 140, 228;
   --qsel-purple: 139, 92, 246;
-  --qsel-dark: 1, 5, 26;
-  --card-bg: rgba(1, 5, 26, 0.85);
+  --qsel-dark: 0, 0, 10;
+  --card-bg: rgba(0, 0, 10, 1);
   --card-border: rgba(63, 140, 228, 0.3);
 }
 
@@ -21,11 +21,11 @@
 }
 
 html {
-  background: #01051a;
+  background: rgba(0, 0, 10, 1);
 }
 
 body {
-  background: #000000;
+  background: rgba(0, 0, 10, 1);
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
@@ -35,8 +35,9 @@ body {
   color: rgba(63, 140, 228, 1);
 }
 
-.bg-qsel-main {
-  background-color: rgba(0, 0, 20, 1);
+.bg-qsel-main,
+.bg-qf {
+  background-color: rgba(0, 0, 10, 1);
 }
 
 .border-qsel {
@@ -49,7 +50,7 @@ body {
 
 /* Glass card effect */
 .glass-card {
-  background: rgba(0, 0, 20, 1);
+  background: rgba(0, 0, 10, 1);
   backdrop-filter: blur(16px);
   border: 1px solid rgba(63, 140, 228, 0.2);
   border-radius: 16px;
@@ -62,16 +63,16 @@ body {
 
 /* Gradient backgrounds */
 .gradient-hero {
-  background: linear-gradient(180deg, rgba(0, 0, 00, 1) 0%, rgba(0, 0, 20, .75) 50%, rgba(0, 0, 00, 1) 100%);
+  background: rgba(0, 0, 10, 1);
 }
 
 .gradient-subtle {
-  background: linear-gradient(135deg, rgba(63, 140, 228, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+  background: rgba(0, 0, 10, 1);
 }
 
 /* Button styles */
 .btn-primary {
-  background: rgba(0, 0, 20, 1);
+  background: rgba(0, 0, 10, 1);
   color: white;
   padding: 6px 20px;
   border-radius: 40px;
@@ -122,7 +123,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(1, 5, 26, 0.5);
+  background: rgba(0, 0, 10, 1);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -172,20 +173,20 @@ body {
 }
 
 .qf-logo-hero {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   margin: 0 auto 1.5rem;
 }
 
 .qf-logo-hero .qf-logo-img {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   object-fit: contain;
 }
 
 .qf-logo-nav {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
 }
 
 .qf-logo-nav .qf-logo-glow {
@@ -198,9 +199,60 @@ body {
 }
 
 .qf-logo-nav .qf-logo-img {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
+}
+
+.legal-copy h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-copy p,
+.legal-copy li {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.legal-copy ul {
+  list-style: disc;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.legal-copy a {
+  color: rgba(63, 140, 228, 1);
+}
+
+.legal-copy a:hover {
+  text-decoration: underline;
+}
+
+.legal-copy strong {
+  color: #ffffff;
+}
+
+.help-index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.help-index li {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(63, 140, 228, 0.2);
+}
+
+.help-index a {
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
 @keyframes qf-logo-pulse {

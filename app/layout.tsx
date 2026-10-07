@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Quantum Follis — Next-Gen Digital Wallet",
   description:
     "The most advanced Solana wallet — guardian recovery, multi-sig security, built-in dApp browser, and quantum-secured vault architecture.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/qf-logo.png" },
   openGraph: {
     title: "Quantum Follis — Next-Gen Digital Wallet",
     description:
@@ -27,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" style={{ background: "#000" }}>
-      <body style={{ background: "#000" }}>{children}</body>
+    <html lang="en" style={{ background: "rgba(0, 0, 10, 1)" }}>
+      <body style={{ background: "rgba(0, 0, 10, 1)" }}>{children}</body>
     </html>
   );
 }
