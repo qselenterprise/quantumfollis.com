@@ -1,3 +1,5 @@
+import { SUPPORT_EMAIL } from './site';
+
 export type HelpSection = {
   heading?: string;
   paragraphs?: string[];
@@ -93,7 +95,7 @@ export const HELP_ARTICLES: HelpArticle[] = [
       {
         paragraphs: [
           'Set Recovery Contact Info asks for an email and a verification code. That address is stored so we can warn you if a pairing reset or recovery is started. It is not the Quantum Follis support mailbox.',
-          'Support is qselenterprise@protonmail.com. Do not put your passphrase, seed, or private key in either mailbox. Support will never ask for them, and a real security alert will never ask you to send them either.',
+          `Support is ${SUPPORT_EMAIL}. Do not put your passphrase, seed, or private key in either mailbox. Support will never ask for them, and a real security alert will never ask you to send them either.`,
         ],
       },
     ],
@@ -212,7 +214,7 @@ export const HELP_ARTICLES: HelpArticle[] = [
       {
         paragraphs: [
           'Settings → Delete Vault wipes the local vault on that phone. It does not delete public transactions, and it does not by itself delete the server records used for pairing, fees, and recovery alerts.',
-          'To ask for those server records to be deleted, email qselenterprise@protonmail.com from the recovery contact if you have one, and include the vault id if you still have it. On-chain history cannot be deleted. If you might need the vault again, finish a backup before you delete it.',
+          `To ask for those server records to be deleted, email ${SUPPORT_EMAIL} from the recovery contact if you have one, and include the vault id if you still have it. On-chain history cannot be deleted. If you might need the vault again, finish a backup before you delete it.`,
         ],
       },
     ],

@@ -14,7 +14,8 @@ export default function HelpIndexPage() {
       <p>
         These articles match the current Quantum Follis and QSEL Authenticator
         flows. For an account problem, use <Link href="/support">Contact Support</Link>.
-        Do not email your passphrase, seed, or private key.
+        Do not email your passphrase, seed, or private key. The video
+        walkthroughs are on <Link href="/tutorials">Tutorials</Link>.
       </p>
       <ul className="help-index">
         {HELP_ARTICLES.map((article) => (

@@ -58,7 +58,7 @@ export default function TermsPage() {
       <p>
         Some actions debit your fee reserve. That reserve is a wallet you
         control inside the vault, not a balance we hold. The token used
-        (QSELx, SOL, or either) is chosen by the service configuration at the
+        (USDC, QSELx, SOL, or either) is chosen by the service configuration at the
         time of the charge and shown in the app. Examples include a paid
         session at login, certain sends, guardian rotation, and a LinkingNFT
         mint after your first one. The first LinkingNFT mint is sponsored for
